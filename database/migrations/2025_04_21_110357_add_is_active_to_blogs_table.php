@@ -14,7 +14,9 @@ class AddIsActiveToBlogsTable extends Migration
     public function up()
     {
         Schema::table('blogs', function (Blueprint $table) {
-            $table->boolean('is_active')->default(1);
+            if (!Schema::hasColumn('blogs', 'is_active')) {
+                $table->boolean('is_active')->default(1);
+            }
         });
     }
 

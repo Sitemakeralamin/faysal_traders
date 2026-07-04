@@ -20,7 +20,7 @@ class CreateBlogsTable extends Migration
             $table->longText('description')->nullable();
             $table->string('author')->nullable();
             $table->string('date')->nullable();
-            $table->tinyInteger('is_active',1)->default(0)->nullable();
+            $table->tinyInteger('is_active')->default(0)->nullable();
             $table->timestamps();
         });
     }

@@ -1,3 +1,4 @@
+@if($todaysDeal)
     <!-- Featured Deal Section - NEW DESIGN -->
     <section class="featured-deals">
         <div class="container-fluid" style="margin-top:30px">
@@ -247,3 +248,4 @@
             </div>
         </div>
     </section>
+@endif

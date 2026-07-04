@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /home/*
+Disallow: /login
+Disallow: /register
+Disallow: /password/reset
+Allow: /
+
+Sitemap: http://faysaltradersbd.com/s.xml

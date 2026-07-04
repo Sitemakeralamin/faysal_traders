@@ -14,7 +14,7 @@ class AddLogoColorTinyHeadBodyColumnsToSettings extends Migration
     public function up()
     {
         Schema::table('settings', function (Blueprint $table) {
-            $table->longText('logo_color')->default('#ed3833')->after('address');
+            $table->string('logo_color')->default('#ed3833')->after('address');
             $table->longText('tiny')->nullable()->after('logo_color');
             $table->longText('head')->nullable()->after('tiny');
             $table->longText('body')->nullable()->after('head');
