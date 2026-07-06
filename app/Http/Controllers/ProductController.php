@@ -205,6 +205,7 @@ class ProductController extends Controller
         $product->discount_type = $request->discount_type;
         $product->discount_amount = $request->discount_amount;
         $product->type = $request->type;
+        $product->price = $request->price ?? 0;
         $product->feature = $request->feature;
         $product->specification = $request->specification;
         $product->description = $request->description;
